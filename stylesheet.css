@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header and Navigation */
+header {
+    background-color: bisque;
+    color: white;
+    padding: 15px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.skip-link {
+    position: absolute;
+    top: 10px; /* Always visible */
+    left: 10px;
+    background-color: yellow; /* Optional: style for visibility */
+    padding: 5px; /* Optional: add some padding */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.skip-link:focus {
+    outline: 2px solid #007BFF; /* Outline on focus */
+    background-color: #fff; /* Change background on focus */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Image Styling with Box Model */
+img {
+    width: 300px;
+    height: auto;
+    border: 5px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Grid Styling for Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Nth-child Selector for Different Styling */
+.gallery img:nth-child(odd) {
+    border-color: #007BFF;
+}
+
+/* Flexbox for Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
